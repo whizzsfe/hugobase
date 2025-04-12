@@ -71,7 +71,8 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-   tg_post_job:
+   # send msg
+  tgpostjob:
       runs-on: ubuntu-latest
       name: send msg to whizzsfe on telegram
       steps:
