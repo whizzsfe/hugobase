@@ -1,0 +1,17 @@
+{
+  "comments": {
+    "dependencies": {
+      "bootstrap": "project",
+      "jquery": "project"
+    },
+    "devDependencies": {}
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-brands-svg-icons": "^6.7.2",
+    "@fortawesome/free-regular-svg-icons": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "bootstrap": "github:twbs/bootstrap",
+    "jquery": "^3.7.1"
+  }
+}
