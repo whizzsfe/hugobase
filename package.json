@@ -11,7 +11,7 @@
     "jquery": "^3.7.1"
   },
   "scripts":  {
-    "serve": "hugo server -D",
+    "serve": "hugo server -D -b http://localhost/",
     "build": "hugo"
   }
 }
