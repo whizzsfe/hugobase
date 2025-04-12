@@ -1,4 +1,4 @@
         </main>
-        <footer class="p-2 bg-gray-700 mb-0 text-light d-print-none text-center">
+        {{ htmlUnescape "&lt;footer class=&quot;p-2" | safeHTML }} {{ site.Params.Styles.HeadFootBG }} {{ htmlUnescape "mb-0 text-light d-print-none text-center&quot;&gt;" | safeHTML}}
             <div>&copy; {{ site.Params.copyright.year }} {{site.Params.copyright.name}}</div>
         </footer>

@@ -19,6 +19,10 @@ disableKinds = ["taxonomy"]
 
 
  [params]
+ logoImgURL = "assets/images/logo.png"
+ [params.styles]
+ headFootBG = "bg-purple"
+ headBorderColor = "border-green"
  [params.copyright]
  year = "2025"
  name = "Whizzsfe Web Services"
