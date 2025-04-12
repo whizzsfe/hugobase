@@ -5,3 +5,7 @@
 		<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css'>
         <!-- Bootstrap -->
     	<link rel='stylesheet' href='assets/css/custom.css'>
+        <title>{{site.Title}} - {{.Page.Title}}</title>
+        {{if site.Params.Favicon}}
+        {{ htmlUnescape "&lt;link rel=&quot;icon&quot; href=&quot;" | safeHTML }}{{ site.Params.Favicon }}{{ htmlUnescape "&quot; type=&quot;" | safeHTML}}{{ htmlUnescape site.Params.FaviconType | safeHTML }}{{ htmlUnescape "&quot;&gt;" | safeHTML }}
+        {{ end }}

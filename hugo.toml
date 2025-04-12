@@ -20,6 +20,8 @@ disableKinds = ["taxonomy"]
 
  [params]
  logoImgURL = "assets/images/logo.png"
+ favicon = "assets/images/logo.svg"
+ faviconType = "image/svg&#43;xml"
  [params.styles]
  headFootBG = "bg-purple"
  headBorderColor = "border-green"
