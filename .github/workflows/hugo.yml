@@ -74,13 +74,13 @@ jobs:
    # send msg
   tgpostjob:
       runs-on: ubuntu-latest
+      needs: deploy
       name: send msg to whizzsfe on telegram
       steps:
         - name: send data
-          needs: deploy
           uses: BorisTestov/tg_sender_action@latest
           env:
             TG_SENDER_TG_CHAT_ID: ${{ secrets.TG_SENDER_TG_CHAT_ID }}
             TG_SENDER_TG_BOT_TOKEN: ${{ secrets.TG_SENDER_TG_BOT_TOKEN }}
             TG_SENDER_PAYLOAD_MESSAGE: "HUGO DEPLOYMENT COMPLETE"
-             TG_SENDER_PAYLOAD_PARSE_MODE: "HTML"
+            TG_SENDER_PAYLOAD_PARSE_MODE: "HTML"
