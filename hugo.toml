@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = '/hugobase/'
 languageCode = 'en-gb'
 title = 'Hugo Test Site'
 disableKinds = ["taxonomy"]
