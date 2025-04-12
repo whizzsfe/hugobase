@@ -71,3 +71,15 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+   tg_post_job:
+      runs-on: ubuntu-latest
+      name: send msg to whizzsfe on telegram
+      steps:
+        - name: send data
+          needs: deploy
+          uses: BorisTestov/tg_sender_action@latest
+          env:
+            TG_SENDER_TG_CHAT_ID: ${{ secrets.TG_SENDER_TG_CHAT_ID }}
+            TG_SENDER_TG_BOT_TOKEN: ${{ secrets.TG_SENDER_TG_BOT_TOKEN }}
+            TG_SENDER_PAYLOAD_MESSAGE: "HUGO DEPLOYMENT COMPLETE"
+             TG_SENDER_PAYLOAD_PARSE_MODE: "HTML"
